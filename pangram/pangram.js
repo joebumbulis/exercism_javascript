@@ -5,9 +5,12 @@ Pangram.prototype.isPangram = function(str) {
     return false;
   }
   for (var i = 0; i < str.length; i++) {
-    if (str.charCodeAt(i) > 127) {
+    if (str.charCodeAt(i) > 65 < 91 > 127) {
       return false;
     }
+    // else if (str.charCodeAt(i) < 91) {
+    //   return false;
+    // }
   }
   return true;
 };
