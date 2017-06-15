@@ -3,12 +3,10 @@ var Bob = function(msg) {
 };
 
 Bob.prototype.hey = function(msg) {
-  switch (msg) {
-    case "shouting":
-      if ((msg = msg.toUpperCase())) return "Whoa, chill out!";
-
-    default:
-      return "Whatever.";
+  if (msg === msg.toUpperCase()) {
+    return "Whoa, chill out!";
+  } else {
+    return "Whatever.";
   }
 };
 
