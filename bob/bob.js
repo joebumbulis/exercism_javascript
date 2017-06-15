@@ -4,8 +4,12 @@ var Bob = function(msg) {
 
 Bob.prototype.hey = function(msg) {
   switch (msg) {
+    case "shouting":
+      if ((msg = msg.toUpperCase())) return "Whoa, chill out!";
+
+    default:
+      return "Whatever.";
   }
-  return "Whatever.";
 };
 
 module.exports = Bob;
