@@ -4,6 +4,7 @@ var Bob = function(msg) {
 
 Bob.prototype.hey = function(msg) {
   var question = msg.slice(-1);
+
   if (msg === msg.toUpperCase()) {
     return "Whoa, chill out!";
   } else if (question === "?") {
